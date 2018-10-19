@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { Imagen1975Page } from '../pages/imagen1975/imagen1975';
 import { Biografia1975Page } from '../pages/biografia1975/biografia1975';
+import { Review1975Page } from '../pages/review1975/review1975';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     Imagen1975Page,
-    Biografia1975Page
+    Biografia1975Page,
+    Review1975Page
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { Biografia1975Page } from '../pages/biografia1975/biografia1975';
     MyApp,
     HomePage,
     Imagen1975Page,
-    Biografia1975Page
+    Biografia1975Page,
+    Review1975Page
   ],
   providers: [
     StatusBar,
