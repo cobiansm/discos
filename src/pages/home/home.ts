@@ -13,6 +13,10 @@ import { ImagenpanicPage } from '../imagenpanic/imagenpanic';
 import { BiopanicPage } from '../biopanic/biopanic';
 import { ReviewpanicPage } from '../reviewpanic/reviewpanic';
 import { TrackspanicPage } from '../trackspanic/trackspanic';
+import { ImagenmusePage } from '../imagenmuse/imagenmuse';
+import { ReviewmusePage } from '../reviewmuse/reviewmuse';
+import { BiomusePage } from '../biomuse/biomuse';
+import { TracksmusePage } from '../tracksmuse/tracksmuse';
 
 @Component({
   selector: 'page-home',
@@ -31,6 +35,10 @@ imagen3 = ImagenpanicPage;
 bio3 = BiopanicPage;
 reseña3 = ReviewpanicPage;
 tracks3 = TrackspanicPage;
+imagen4 = ImagenmusePage;
+reseña4 = ReviewmusePage;
+bio4 = BiomusePage;
+tracks4 = TracksmusePage;
 
   constructor(public navCtrl: NavController) {
 
@@ -71,5 +79,18 @@ tracks3 = TrackspanicPage;
   trackspanic() {
     this.navCtrl.push(this.tracks3);
   }
+  imagenmuse() {
+    this.navCtrl.push(this.imagen4);
+  }
+  biomuse() {
+    this.navCtrl.push(this.bio4);
+  }
+  reviewmuse() {
+    this.navCtrl.push(this.reseña4);
+  }
+  tracksmuse() {
+    this.navCtrl.push(this.tracks4);
+  }
+
 
 }

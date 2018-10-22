@@ -18,6 +18,10 @@ import { ImagenpanicPage } from '../pages/imagenpanic/imagenpanic';
 import { ReviewpanicPage } from '../pages/reviewpanic/reviewpanic';
 import { BiopanicPage } from '../pages/biopanic/biopanic';
 import { TrackspanicPage } from '../pages/trackspanic/trackspanic';
+import { ImagenmusePage } from '../pages/imagenmuse/imagenmuse';
+import { BiomusePage } from '../pages/biomuse/biomuse';
+import { ReviewmusePage } from '../pages/reviewmuse/reviewmuse';
+import { TracksmusePage } from '../pages/tracksmuse/tracksmuse';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,11 @@ import { TrackspanicPage } from '../pages/trackspanic/trackspanic';
     ImagenpanicPage,
     ReviewpanicPage,
     BiopanicPage,
-    TrackspanicPage
+    TrackspanicPage,
+    ImagenmusePage,
+    BiomusePage,
+    ReviewmusePage,
+    TracksmusePage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +63,11 @@ import { TrackspanicPage } from '../pages/trackspanic/trackspanic';
     ImagenpanicPage,
     BiopanicPage,
     ReviewpanicPage,
-    TrackspanicPage
+    TrackspanicPage,
+    ImagenmusePage,
+    BiomusePage,
+    TracksmusePage,
+    ReviewmusePage
   ],
   providers: [
     StatusBar,
