@@ -9,6 +9,10 @@ import { ImagenmjPage } from '../imagenmj/imagenmj';
 import { BiomjPage } from '../biomj/biomj';
 import { ReviewmjPage } from '../reviewmj/reviewmj';
 import { TracksmjPage } from '../tracksmj/tracksmj';
+import { ImagenpanicPage } from '../imagenpanic/imagenpanic';
+import { BiopanicPage } from '../biopanic/biopanic';
+import { ReviewpanicPage } from '../reviewpanic/reviewpanic';
+import { TrackspanicPage } from '../trackspanic/trackspanic';
 
 @Component({
   selector: 'page-home',
@@ -23,6 +27,10 @@ imagen2 = ImagenmjPage;
 bio2 = BiomjPage;
 reseña2 = ReviewmjPage;
 tracks2 = TracksmjPage;
+imagen3 = ImagenpanicPage;
+bio3 = BiopanicPage;
+reseña3 = ReviewpanicPage;
+tracks3 = TrackspanicPage;
 
   constructor(public navCtrl: NavController) {
 
@@ -50,6 +58,18 @@ tracks2 = TracksmjPage;
   }
   reviewmj() {
     this. navCtrl.push(this.reseña2);
+  }
+  imagenpanic() {
+    this.navCtrl.push(this.imagen3);
+  }
+  biopanic() {
+    this.navCtrl.push(this.bio3);
+  }
+  reviewpanic() {
+    this.navCtrl.push(this.reseña3);
+  }
+  trackspanic() {
+    this.navCtrl.push(this.tracks3);
   }
 
 }
