@@ -1,5 +1,5 @@
 <!--
-  Generated template for the Imagen1975Page page.
+  Generated template for the Tracks1975Page page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,12 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>I like it when you sleep, for you are so beautiful yet so unaware of it</ion-title>
+    <ion-title>Tracks 1975</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding style = "background-color:#000E14">
-<img src='../assets/1975.jpg' style = "height:300px; width:400px" >
+<ion-list>
+<ion-item *ngFor= "let cancion of canciones1975" >
+  {{cancion}}
+</ion-item>
+
+</ion-list>
 </ion-content>

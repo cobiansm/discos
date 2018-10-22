@@ -8,7 +8,31 @@
 </ion-header>
 
 <ion-content padding style= "background-color: black">
-  
+
+  <ion-card style='background-color:#E63946'>
+    <ion-row>
+    <ion-col>
+      <img src = '../assets/bad.jpg' (click)='imagenmj()'>
+    </ion-col>
+
+    <ion-col>
+      <ion-card-header></ion-card-header>
+      
+      <h2 (click)='biomj()'> Michael Jackson </h2>
+      <p>Bad<br>
+      1987 </p>
+      <ion-list (click)='reviewmj()'>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+      </ion-list>
+      
+  </ion-col>
+  </ion-row>
+</ion-card>
+
   <ion-card style='background-color:#F1FAEE'>
     <ion-row>
     <ion-col>
@@ -16,8 +40,9 @@
     </ion-col>
 
     <ion-col>
+        <ion-card-header></ion-card-header>
       <h2 (click)='bio1975()'> The 1975 </h2>
-      <p>I like it when you...<br>
+      <p (click)="tracks1975()">I like it when you...<br>
       2016 </p>
       <ion-list (click)='review1975()'>
         <ion-icon name="star"></ion-icon>
@@ -31,6 +56,48 @@
   </ion-row>
 </ion-card>
 
+<ion-card style="background-color: #A8DADC">
+  <ion-row>
+    <ion-col>
+        
+     <img src ="../assets/panic.jpg" (click)="imagenpanic()">
+    </ion-col>
+    <ion-col>
+        <ion-card-header></ion-card-header>
+    <h2 (click)="biopanic()">Panic! At The Disco</h2>
+   <p>Pray For The Wicked <br>
+   2018</p>
+  <ion-list>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+  </ion-list>
+  </ion-col>
+  </ion-row>
+  </ion-card>
+
+  <ion-card style="background-color: #457B9D">
+    <ion-row>
+    <ion-col>
+    <img src ="../assets/musealbum.jpg" (click)="imagenmuse()">
+    </ion-col>
+   <ion-col>
+      <ion-card-header></ion-card-header>
+   <h2 (click)="biomuse()">Muse</h2>
+    <p>Simulation Theory <br>
+     2018</p>
+     <ion-list>
+     <ion-icon name="star"></ion-icon>
+     <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+   <ion-icon name="star"></ion-icon>
+    <ion-icon name="star"></ion-icon>
+     </ion-list>
+    </ion-col>
+   </ion-row>
+ </ion-card>
 
 </ion-content>
 </html>
